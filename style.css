@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+} 
+
+html , body{
+   background-color: skyblue;
+   height: 100%;
+   width: 100%;
+}
+
+
+body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#container { 
+    height: 450px;
+    width: 350px;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+}
+
+#container img {
+    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 9px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#container i {
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.4s;
+}
